@@ -1,0 +1,40 @@
+.menu {
+  width: 750px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: aqua;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 40px;
+}
+
+.menu li ul li {
+  overflow: hidden;
+  height: 0;
+  border: 1px solid white;
+}
+
+.menu li:hover > ul > li {
+  overflow: visible;
+  height: 40px;
+}
